@@ -1,0 +1,26 @@
+{
+    "name": "frontend-assessment-ui",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "typecheck": "tsc --noEmit",
+        "test:e2e": "node tests/build.cjs && playwright test",
+        "format:check": "prettier --check app components hooks lib types tests playwright.config.ts next.config.mjs ../backend/src ../backend/test"
+    },
+    "dependencies": {
+        "next": "14.2.35",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.63.0",
+        "@types/node": "20.14.10",
+        "@types/react": "18.3.3",
+        "@types/react-dom": "18.3.0",
+        "prettier": "^3.9.8",
+        "typescript": "5.5.4"
+    }
+}
